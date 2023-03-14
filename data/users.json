@@ -88,32 +88,5 @@
         "company": "Google",
         "created_at": "2014-10-18T05:50:28.626Z",
         "country": "Congo"
-    },
-    {
-        "email": "test@example.com",
-        "first": "test",
-        "last": "test",
-        "company": "test",
-        "country": "test",
-        "id": 11,
-        "created_at": "2023-03-13T14:08:46.952Z"
-    },
-    {
-        "email": "saucice@gmail.com",
-        "first": "ALex",
-        "last": "LoeseL",
-        "company": "SO6",
-        "country": "SAUSSICE land",
-        "id": 12,
-        "created_at": "2023-03-13T14:15:18.664Z"
-    },
-    {
-        "email": "a",
-        "first": "a",
-        "last": "a",
-        "company": "a",
-        "country": "a",
-        "id": 13,
-        "created_at": "2023-03-13T14:58:37.010Z"
     }
 ]

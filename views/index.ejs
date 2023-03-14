@@ -3,24 +3,23 @@
 
 <head>
   <title>
-    <%= title %>
+    Users list
   </title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 
 <body>
   <h1>
-    <%= title %>
+    <u>Users list :</u>
   </h1>
-  <p>Welcome to <%= title %>
-  </p>
   <br>
-  <button>Add a user</button>
+  <button onclick="location.href='add'">Add a user</button>
   <br>
   <br>
   <table>
     <thead>
       <tr>
+        <td>#</td>
         <td>Email</td>
         <td>First name</td>
         <td>Last name</td>
@@ -32,6 +31,9 @@
     <tbody>
       <% for (let user of users) { %>
         <tr>
+          <td>
+            <%= user.id %>
+          </td>
           <td>
             <%= user.email %>
           </td>
