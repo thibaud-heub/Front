@@ -4,8 +4,8 @@ const fs = require("fs");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-    const users = JSON.parse(fs.readFileSync("data/users.json"));
-    res.render("index", { title: "Express", users });
+    const users = JSON.parse(fs.readFileSync("./data/users.json"));
+    res.render("index", { users });
 });
 
 module.exports = router;
