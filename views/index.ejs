@@ -14,6 +14,47 @@
   </h1>
   <p>Welcome to <%= title %>
   </p>
+  <br>
+  <button>Add a user</button>
+  <br>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <td>Email</td>
+        <td>First name</td>
+        <td>Last name</td>
+        <td>Company</td>
+        <td>Created at</td>
+        <td>Country</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (let user of users) { %>
+        <tr>
+          <td>
+            <%= user.email %>
+          </td>
+          <td>
+            <%= user.first %>
+          </td>
+          <td>
+            <%= user.last %>
+          </td>
+          <td>
+            <%= user.company %>
+          </td>
+          <td>
+            <%= user.created_at %>
+          </td>
+          <td>
+            <%= user.country %>
+          </td>
+          <td><button>Edit</button></td>
+        </tr>
+        <% } %>
+    </tbody>
+  </table>
 </body>
 
 </html>
